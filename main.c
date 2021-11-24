@@ -21,7 +21,7 @@ int line_right_to_left(double x, double y, double x1, double y1, double x2, doub
               sqrt(pow(x2 - x1, 2) + sqrt(pow(y2 - y1, 2)))) < 0.5)
             && (x >= x2 && x <= x1 && y >= y1 && y <= y2) ? 1 : 0);
 }
-
+// Unteraufgabe 3c)
 int rectangle(double x, double y, double lx, double rx, double uy, double oy) {
     // p0 = lx, uy;p1 = lx, oy;p2 = rx, uy;p3 = rx, oy
     // l1 = p0-p1; l2 = p0-p2; l3 = p1-p3; l4 = p2-p3
@@ -57,7 +57,6 @@ int checkAllLines(double x, double y) {
 }
 
 int draw() {
-    int display[31][25];
     for (int y = 24; y >= 0; y--) {
         for (int x = 0; x < 31; x++) {
             bool draw = false;
